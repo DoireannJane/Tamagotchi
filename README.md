@@ -23,4 +23,5 @@ On click each corresponding button will reset their clocks
 ||
 After 30 seconds of no click response one minute is removed from overall life
 ||
-<iframe style="border:none" width="800" height="450" src=https://whimsical.com/tamagotchi-JxAex1bq2tojfW7gHLrr7g></iframe>
+
+https://whimsical.com/tamagotchi-JxAex1bq2tojfW7gHLrr7g
