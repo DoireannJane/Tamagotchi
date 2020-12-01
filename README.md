@@ -6,6 +6,8 @@ User will open the default browser and be presented with an egg. Clicking on the
 Hydra maybe?
 Multiple clocks or counters?
 
+Add scoreboard that tracks Hunger, sleep and boredom. 1-10
+
 Egg appears on screen
 ||
 On click the Egg Hatches
