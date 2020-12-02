@@ -1,0 +1,32 @@
+/* 
+use flex
+position: absolute  */
+h1 {
+    color: #e834bb;
+    text-align: center;
+}
+#egg {
+    position: absolute;
+    display: flex;
+    z-index: 4;
+    border-radius: 50%;
+}
+#baby {
+    position: absolute;
+    display: flex;
+    z-index: 3;
+    border-radius: 50%;
+}
+#child {
+    position: absolute;
+    display: flex;
+    z-index: 2;
+    border-radius: 50%;
+}
+#adult {
+    position: absolute;
+    display: flex;
+    z-index: 1;
+    size: 70px;
+    border-radius: 50%;
+}
