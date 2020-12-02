@@ -1,15 +1,23 @@
 console.log("Welcome proud parent! Click egg to hatch!")
-let age = 1;
+let age = 0;
 const gameBegin = $("#egg").click(function(){
     $("#egg").hide();
+    $("body").css("background-color","black");
+    $(".age").css("color","white");
     const ager = setInterval(function (){
-        console.log(`It's my ${age} Birthday!`);
+        console.log(`It's my Birthday!`);
         age++;
         $(".age").text(`age: ${age} years old`);
-        if (age === 11){
+        if (age === 3) {
+            $("#baby").hide();
+        }
+        if (age ===6){
+            $("#child").hide();
+        }
+        if (age === 10){
             clearInterval(ager);
         }
-    }, 3000);
+    }, 2000);
 });
 
 

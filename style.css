@@ -20,14 +20,14 @@ section {
 
 .pics {
     text-align: center;
-    display: block;
+    justify-content: auto;
+    display: flex;
     margin-left: 300px;
    
       }
   
 #egg {
     position: absolute;
-    justify-content: center;
     display: block;
     z-index: 4;
       }
@@ -55,5 +55,5 @@ section {
     justify-content: center;
     display: block;
     z-index: 1;
-    transform: scale(0.7, 0.5);
+    transform: scale(0.5, 0.5);
 }
