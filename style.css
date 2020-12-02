@@ -1,21 +1,32 @@
 /* 
 use flex
 position: absolute  */
+
 h1 {
     color: #e834bb;
     text-align: center;
 }
-div {
-    display: flex;
-    justify-content: center;
+
+section {
+    text-align: center;
+}
+
+.button {
     align-items: center;
-    height: 800px;
-  }
+    margin-left: 340px;
+}
+
+.pics {
+    text-align: center;
+    display: block;
+    margin-left: 300px;
+      }
+  
 #egg {
     position: absolute;
-    display: flex;
+    justify-content: center;
+    display: block;
     z-index: 4;
-    border-radius: 10%;
       }
     
 
@@ -24,20 +35,22 @@ div {
 
 #baby {
     position: absolute;
-    display: flex;
+    justify-content: center;
+    display: block;
     z-index: 3;
     
 }
 #child {
     position: absolute;
-    display: flex;
+    justify-content: center;
+    display: block;
     z-index: 2;
+    
     
 }
 #adult {
     position: absolute;
-    display: flex;
+    justify-content: center;
+    display: block;
     z-index: 1;
-    size: 70px;
-   
 }
