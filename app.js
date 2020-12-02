@@ -9,7 +9,7 @@ const gameBegin = $("#egg").click(function(){
         if (age === 11){
             clearInterval(ager);
         }
-    }, 1000);
+    }, 3000);
 });
 
 // let age = 1;
