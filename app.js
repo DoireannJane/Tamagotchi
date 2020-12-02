@@ -5,6 +5,7 @@ const gameBegin = $("#egg").click(function(){
     const ager = setInterval(function (){
         console.log(`It's my ${age} Birthday!`);
         age++;
+        $(".age").text(`age: ${age} years old`);
         if (age === 11){
             clearInterval(ager);
         }
