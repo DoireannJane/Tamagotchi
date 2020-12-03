@@ -97,60 +97,62 @@ const overallDecreaseF = $("#egg").click(setDecreaseFun);
 //     }
     
 // }
-const dblClickE = $("#feed").dblclick(function(){
-    clearInterval(energyInterval);
-    if (age >=0 && energy <= 6) {
-        energy+=4;
-        $("#Energy").text(`Energy:${(energy)}`);
-        console.log("Yum Yum says the Hydra!");}
-        if (energy<=10) setDecreaseEnergy();
-});
 
 const clickE = $("#feed").click(function(){
-    clearInterval(energyInterval);
+    // clearInterval(energyInterval);
     if (age >=0 && energy <= 9) {
         energy+=1;
         $("#Energy").text(`Energy:${(energy)}`);
         console.log("Yum Yum says the Hydra!");
     }
-    if (energy<=10) setDecreaseEnergy();
+    // if (energy<=10) setDecreaseEnergy();
 
 });
 
+const dblClickE = $("#feed").dblclick(function(){
+    // clearInterval(energyInterval);
+    if (age >=0 && energy <= 6) {
+        energy+=4;
+        $("#Energy").text(`Energy:${(energy)}`);
+        console.log("Yum Yum says the Hydra!");}
+        // if (energy<=10) setDecreaseEnergy();
+});
+
 const clickP = $("#play").click(function(){
-    clearInterval(funInterval);
+    // clearInterval(funInterval);
     if (age >=0 && fun <= 9) {
-        energy+=1;
+        fun+=1;
     $("#Fun").text(`Fun:${(fun)}`);
     console.log("Woohoo says the hydra");
     }
   });
 
 const dblclickP = $("#play").dblclick(function(){
-    clearInterval(funInterval);
+    // clearInterval(funInterval);
     if (age >=0 && fun <= 6){
+        fun+=4;
     $("#Fun").text(`Fun:${(fun)}`);
     console.log("Woohoo says the hydra");
     }
   });
 
 const clickS = $("#sleep").click(function(){
-    clearInterval(healthInterval);
+    // clearInterval(healthInterval);
     if (age >=0 && fun <= 9){
-    $("#Health").text(`Fun:${(health)}`);
+        health+=1;
+    $("#Health").text(`Health:${(health)}`);
     console.log("ZzZzZ says the Hydra!");
     }
   });
 
 const dblclickS = $("#sleep").dblclick(function(){
-    clearInterval(healthInterval);
+    // clearInterval(healthInterval);
     if (age >=0 && fun <= 6){
-    $("#Health").text(`Fun:${(health)}`);
+        health+=4;
+    $("#Health").text(`Health:${(health)}`);
     console.log("ZzZzZ says the Hydra!");
     }
   });
-
-
 
 
 
