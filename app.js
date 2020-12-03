@@ -33,9 +33,11 @@ const gameBegin = $("#egg").click(function(){
         if (age === 20){
             clearInterval(ager);
         }
-    }, 1000);
+    }, 4000);
 }
 );
+
+
 const overallDecrease = $("#egg").click(function(){
     const healthMinus = setInterval(function (){
         console.log(`health is declining`);
@@ -49,7 +51,7 @@ const overallDecrease = $("#egg").click(function(){
             $("#adult").hide();
             $(".button").hide();
         }
-    }, 2000);
+    }, 3000);
 });
 
 const overallDecreaseE = $("#egg").click(function(){
@@ -80,28 +82,28 @@ const overallDecreaseF = $("#egg").click(function(){
             $("#adult").hide();
             $(".button").hide();
         }
-    }, 3000);
+    }, 4000);
 });
 
 
 $("#feed").click(function(){
     if (age >=0) {
-    console.log("Yum Yum says the Hydra!");
-    $("#Energy").text(`energy:${(energy+1)}`);
+        $("#Energy").text(`Energy:${(energy+1)}`);
+        console.log("Yum Yum says the Hydra!");
   };
 });
 
 $("#play").click(function(){
     if (age >=0){
+    $("#Fun").text(`Fun:${(fun+1)}`);
     console.log("Woohoo says the hydra");
-    $("#Fun").text(`Fun:${(health+1)}`);
     }
   });
 
 $("#sleep").click(function(){
     if (age >=0){
-    console.log("ZzZzZ says the Hydra!")
-    $("#Health").text(`health:${(health+1)}`);
+    $("#Health").text(`Health:${(health+1)}`);
+    console.log("ZzZzZ says the Hydra!");
     }
   });
 
