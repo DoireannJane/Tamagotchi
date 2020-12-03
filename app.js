@@ -10,9 +10,13 @@ const gameBegin = $("#egg").click(function(){
         $(".age").text(`age: ${age} years old`);
         if (age === 3) {
             $("#baby").hide();
+            $("body").css("background-color","white");
+            $(".age").css("color","black");
         }
         if (age ===6){
             $("#child").hide();
+            $("body").css("background-color","black");
+            $(".age").css("color","white");
         }
         if (age === 10){
             clearInterval(ager);
