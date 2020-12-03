@@ -40,8 +40,8 @@ const overallDecrease = $("#egg").click(function(){
     const healthMinus = setInterval(function (){
         console.log(`health is declining`);
         health--;
-        $("#Health").text(`health:${health}`);
-        if (health === 0) {
+        $("#Health").text(`Health:${health}`);
+        if (health === 0){
             clearInterval(healthMinus);
             $("#egg").hide();
             $("#baby").hide();
@@ -52,16 +52,49 @@ const overallDecrease = $("#egg").click(function(){
     }, 2000);
 });
 
+const overallDecreaseE = $("#egg").click(function(){
+    const energyMinus = setInterval(function (){
+        console.log(`Hydra hungry!`);
+        energy--;
+        $("#Energy").text(`Energy:${energy}`);
+        if (energy === 0) {
+            clearInterval(energyMinus);
+            $("#egg").hide();
+            $("#baby").hide();
+            $("#child").hide();
+            $("#adult").hide();
+            $(".button").hide();
+        }
+    }, 2500);
+});
+const overallDecreaseF = $("#egg").click(function(){
+    const funMinus = setInterval(function (){
+        console.log(`Hydra getting bored!`);
+        fun--;
+        $("#Health").text(`Health:${fun}`);
+        if (fun === 0) {
+            clearInterval(funMinus);
+            $("#egg").hide();
+            $("#baby").hide();
+            $("#child").hide();
+            $("#adult").hide();
+            $(".button").hide();
+        }
+    }, 3000);
+});
+
 
 $("#feed").click(function(){
-    if (age >= 0) {
+    if (age >=0) {
     console.log("Yum Yum says the Hydra!");
+    $("#Energy").text(`energy:${(energy+1)}`);
   };
 });
 
 $("#play").click(function(){
     if (age >=0){
-    console.log("Woohoo says the hydra")
+    console.log("Woohoo says the hydra");
+    $("#Fun").text(`Fun:${(health+1)}`);
     }
   });
 
