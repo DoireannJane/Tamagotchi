@@ -40,7 +40,7 @@ const gameBegin = $("#egg").click(function(){
 );
 
 
-const overallDecrease = $("#egg").click(function(){
+const overallDecreaseH = $("#egg").click(function(){
     const healthMinus = setInterval(function (){
         console.log(`health is declining`);
         health--;
@@ -115,13 +115,13 @@ $("#play").click(function(){
   });
 
 $("#play").dblclick(function(){
-    if (age >=0 && fun <= 9){
-    $("#Fun").text(`Fun:${(funSum)}`);
+    if (age >=0 && fun <= 6){
+    $("#Fun").text(`Fun:${(fun+4)}`);
     console.log("Woohoo says the hydra");
     }
   });
 
-  $("#sleep").dblclick(function(){
+  $("#sleep").click(function(){
     if (age >=0 && health <= 9){
     $("#Health").text(`Health:${(health+1)}`);
     console.log("ZzZzZ says the Hydra!");
@@ -129,7 +129,7 @@ $("#play").dblclick(function(){
   });
 
 $("#sleep").dblclick(function(){
-    if (age >=0 && health <= 9){
+    if (age >=0 && health <= 6){
     $("#Health").text(`Health:${(health+4)}`);
     console.log("ZzZzZ says the Hydra!");
     }
