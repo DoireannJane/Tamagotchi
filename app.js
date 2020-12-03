@@ -30,7 +30,7 @@ const gameBegin = $("#egg").click(function(){
             $(".age").css("color","white");
             $(".overall").css("color","white");
         }
-        if (age === 10){
+        if (age === 20){
             clearInterval(ager);
         }
     }, 1000);
@@ -40,32 +40,35 @@ const overallDecrease = $("#egg").click(function(){
     const healthMinus = setInterval(function (){
         console.log(`health is declining`);
         health--;
-        $(".overall").text(`health:${health}`);
+        $("#Health").text(`health:${health}`);
         if (health === 0) {
             clearInterval(healthMinus);
             $("#egg").hide();
             $("#baby").hide();
             $("#child").hide();
             $("#adult").hide();
+            $(".button").hide();
         }
     }, 2000);
 });
 
 
 $("#feed").click(function(){
-    if (age > 1) {
-    console.log("Yum Yum says the Hydra!")
+    if (age >= 0) {
+    console.log("Yum Yum says the Hydra!");
   };
 });
+
 $("#play").click(function(){
-    if (age > 1){
+    if (age >=0){
     console.log("Woohoo says the hydra")
     }
   });
 
 $("#sleep").click(function(){
-    if (age > 1){
+    if (age >=0){
     console.log("ZzZzZ says the Hydra!")
+    $("#Health").text(`health:${(health+1)}`);
     }
   });
 
