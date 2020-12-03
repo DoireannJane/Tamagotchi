@@ -2,13 +2,19 @@
 use flex
 position: absolute  */
 
+
 h1 {
     font:font-family: 'Texturina', serif;
     font-size: 40px;
     color: #DD7F48;
     text-align: center;
 }
-
+.age {
+    padding: 50px;
+}
+.overall {
+    padding: 10px;
+}
 section {
     text-align: center;
 }
