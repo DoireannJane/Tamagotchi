@@ -30,10 +30,10 @@ const gameBegin = $("#egg").click(function(){
             $(".age").css("color","white");
             $(".overall").css("color","white");
         }
-        if (age === 20){
+        if (health ===0 || fun ===0 || health ===0){
             clearInterval(ager);
         }
-    }, 4000);
+    }, 6000);
 }
 );
 
@@ -51,7 +51,7 @@ const overallDecrease = $("#egg").click(function(){
             $("#adult").hide();
             $(".button").hide();
         }
-    }, 3000);
+    }, 4500);
 });
 
 const overallDecreaseE = $("#egg").click(function(){
@@ -67,13 +67,13 @@ const overallDecreaseE = $("#egg").click(function(){
             $("#adult").hide();
             $(".button").hide();
         }
-    }, 2500);
+    }, 3500);
 });
 const overallDecreaseF = $("#egg").click(function(){
     const funMinus = setInterval(function (){
         console.log(`Hydra getting bored!`);
         fun--;
-        $("#Health").text(`Health:${fun}`);
+        $("#Fun").text(`Fun:${fun}`);
         if (fun === 0) {
             clearInterval(funMinus);
             $("#egg").hide();
@@ -82,30 +82,58 @@ const overallDecreaseF = $("#egg").click(function(){
             $("#adult").hide();
             $(".button").hide();
         }
-    }, 4000);
+    }, 4500);
 });
 
+// const energyIncrease = function energyIncrease() {
+//     if (age <= 10){
+//         $("#Energy").text(`Energy:${(energy+1)}`);
+//     }
+    
+// }
+$("#feed").dblclick(function(){
+    while (age >=0 && age <= 9) {
+        $("#Energy").text(`Energy:${(energy+4)}`);
+        console.log("Yum Yum says the Hydra!");
+  };
+});
 
 $("#feed").click(function(){
-    if (age >=0) {
+    if (age >=0 && age <= 9) {
         $("#Energy").text(`Energy:${(energy+1)}`);
         console.log("Yum Yum says the Hydra!");
   };
 });
 
 $("#play").click(function(){
-    if (age >=0){
+    if (age >=0 && age <= 9){
     $("#Fun").text(`Fun:${(fun+1)}`);
     console.log("Woohoo says the hydra");
     }
   });
 
-$("#sleep").click(function(){
-    if (age >=0){
+$("#play").dblclick(function(){
+    if (age >=0 && age < 10){
+    $("#Fun").text(`Fun:${(fun+4)}`);
+    console.log("Woohoo says the hydra");
+    }
+  });
+
+  $("#sleep").dblclick(function(){
+    if (age >=0 && age < 10){
     $("#Health").text(`Health:${(health+1)}`);
     console.log("ZzZzZ says the Hydra!");
     }
   });
+
+$("#sleep").dblclick(function(){
+    if (age >=0 && age < 10){
+    $("#Health").text(`Health:${(health+4)}`);
+    console.log("ZzZzZ says the Hydra!");
+    }
+  });
+
+
 
 
 
