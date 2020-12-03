@@ -10,7 +10,7 @@ h1 {
     text-align: center;
 }
 .age {
-    padding: 50px;
+    padding: 10px;
 }
 .overall {
     padding: 10px;
@@ -35,7 +35,7 @@ section {
 #egg {
     position: absolute;
     display: block;
-    z-index: 4;
+    z-index: 5;
       }
     
 
@@ -46,27 +46,27 @@ section {
     position: absolute;
     justify-content: center;
     display: block;
-    z-index: 3;
+    z-index: 4;
     
 }
 #child {
     position: absolute;
     justify-content: center;
     display: block;
-    z-index: 2;
+    z-index: 3;
     
 }
 #adult {
     position: absolute;
     justify-content: center;
     display: block;
-    z-index: 1;
-    transform: scale(0.5, 0.5);
+    z-index: 2;
+
 }
-#adult2 {
+#game-over {
     position: absolute;
     justify-content: center;
     display: block;
     z-index: 1;
-    transform: scale (2.0, 2.0);
+
 }

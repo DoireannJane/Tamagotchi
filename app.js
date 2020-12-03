@@ -138,7 +138,7 @@ const dblclickP = $("#play").dblclick(function(){
 
 const clickS = $("#sleep").click(function(){
     // clearInterval(healthInterval);
-    if (age >=0 && fun <= 9){
+    if (age >=0 && sleep <= 9){
         health+=1;
     $("#Health").text(`Health:${(health)}`);
     console.log("ZzZzZ says the Hydra!");
@@ -147,7 +147,7 @@ const clickS = $("#sleep").click(function(){
 
 const dblclickS = $("#sleep").dblclick(function(){
     // clearInterval(healthInterval);
-    if (age >=0 && fun <= 6){
+    if (age >=0 && health <= 6){
         health+=4;
     $("#Health").text(`Health:${(health)}`);
     console.log("ZzZzZ says the Hydra!");
