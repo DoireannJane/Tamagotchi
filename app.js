@@ -9,6 +9,7 @@ let age = 0;
 let health = 10;
 let fun = 10;
 let energy = 10;
+
 const gameBegin = $("#egg").click(function(){
     $("#egg").hide();
     $("body").css("background-color","black");
@@ -92,14 +93,14 @@ const overallDecreaseF = $("#egg").click(function(){
 //     }
     
 // }
-$("#feed").dblclick(function(){
-    while (age >=0 && energy <= 9) {
+const dblClickE = $("#feed").dblclick(function(){
+    if (age >=0 && energy <= 9) {
         $("#Energy").text(`Energy:${(energy+4)}`);
         console.log("Yum Yum says the Hydra!");
   };
 });
 
-$("#feed").click(function(){
+const clickE = $("#feed").click(function(){
     if (age >=0 && energy <= 9) {
         $("#Energy").text(`Energy:${(energy+1)}`);
         console.log("Yum Yum says the Hydra!");
@@ -115,7 +116,7 @@ $("#play").click(function(){
 
 $("#play").dblclick(function(){
     if (age >=0 && fun <= 9){
-    $("#Fun").text(`Fun:${(fun+4)}`);
+    $("#Fun").text(`Fun:${(funSum)}`);
     console.log("Woohoo says the hydra");
     }
   });
