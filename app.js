@@ -23,10 +23,10 @@ let energyInterval = null;
 //     }
 // });
 
-
 function getName(){
     const name = $("#name").val();
-    $("h1").html(`${name} the Hydra`)
+    $("h1").html(`${name} the Hydra`);
+    console.log("Now click the egg to hatch!");
 }
 
 const gameBegin = $("#egg").click(function(){

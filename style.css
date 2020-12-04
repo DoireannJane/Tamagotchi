@@ -24,6 +24,7 @@ section {
 }
 
 .button {
+    cursor: pointer;
     font-family: 'Bungee Shade', cursive;
     font-size: 16px;
     align-items: center;
@@ -33,6 +34,11 @@ section {
     border-radius: 50%;
     color:rgb(135, 11, 135);
 }
+.button:hover {
+    background-color: rgb(135, 11, 135); 
+    color: white;
+    opacity: 0.5;
+  }
 
 
 #name {
@@ -53,6 +59,7 @@ section {
       }
   
 #egg {
+    cursor: pointer;
     position: absolute;
     display: block;
     z-index: 5;
