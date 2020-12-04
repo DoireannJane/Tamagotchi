@@ -13,7 +13,6 @@ let energy = 10;
 let energyInterval = null;
 
 
-
 // let $nameHydra= $("#name").val();
 // document.getElementById("#name").addEventListener('keypress', function (e){
 //     if (e.key === 'Enter') {
@@ -23,6 +22,8 @@ let energyInterval = null;
         
 //     }
 // });
+
+
 function getName(){
     const name = $("#name").val();
     $("h1").html(`${name} the Hydra`)
@@ -34,7 +35,7 @@ const gameBegin = $("#egg").click(function(){
     $(".age").css("color","white");
     $(".overall").css("color","white");
     const ager = setInterval(function (){
-        console.log(`It's my Birthday!`);
+        console.log(`Happy Birthday ${name}!`);
         age++;
         $(".age").text(`age: ${age} years old`);
 
@@ -59,7 +60,7 @@ const gameBegin = $("#egg").click(function(){
 
 const setDecreaseHealth = function(){
     const healthInterval = setInterval(function (){
-        console.log(`health is declining`);
+        console.log(`Yawnn`);
         health--;
         $("#Health").text(`Health:${health}`);
         if (health === 0){
@@ -77,7 +78,7 @@ const overallDecreaseH = $("#egg").click(setDecreaseHealth);
 
 const setDecreaseEnergy = function(){
    const energyInterval = setInterval(function (){
-        console.log(`Hydra hungry!`);
+        console.log(`I'm hungry!`);
         energy--;
         $("#Energy").text(`Energy:${energy}`);
         if (energy === 0) {
@@ -94,7 +95,7 @@ const overallDecreaseE = $("#egg").click(setDecreaseEnergy);
 
 const setDecreaseFun = function(){
     const funMinus = setInterval(function (){
-        console.log(`Hydra getting bored!`);
+        console.log(`I'm bored!`);
         fun--;
         $("#Fun").text(`Fun:${fun}`);
         if (fun === 0) {
@@ -120,7 +121,7 @@ const clickE = $("#feed").click(function(){
     if (age >=0 && energy <= 9) {
         energy+=1;
         $("#Energy").text(`Energy:${(energy)}`);
-        console.log("Yum Yum says the Hydra!");
+        console.log(`Yum Yum!`);
     }
     // if (energy<=10) setDecreaseEnergy();
 
@@ -131,7 +132,7 @@ const dblClickE = $("#feed").dblclick(function(){
     if (age >=0 && energy <= 6) {
         energy+=4;
         $("#Energy").text(`Energy:${(energy)}`);
-        console.log("Yum Yum says the Hydra!");}
+        console.log(`Yum Yum!`);}
         // if (energy<=10) setDecreaseEnergy();
 });
 
@@ -140,7 +141,7 @@ const clickP = $("#play").click(function(){
     if (age >=0 && fun <= 9) {
         fun+=1;
     $("#Fun").text(`Fun:${(fun)}`);
-    console.log("Woohoo says the hydra");
+    console.log(`Woohoo!`);
     }
   });
 
@@ -149,7 +150,7 @@ const dblclickP = $("#play").dblclick(function(){
     if (age >=0 && fun <= 6){
         fun+=4;
     $("#Fun").text(`Fun:${(fun)}`);
-    console.log("Woohoo says the hydra");
+    console.log(`Woohoo!`);
     }
   });
 
@@ -158,7 +159,7 @@ const clickS = $("#sleep").click(function(){
     if (age >=0 && health <= 9){
         health+=1;
     $("#Health").text(`Health:${(health)}`);
-    console.log("ZzZzZ says the Hydra!");
+    console.log(`ZzZzZzz`);
     }
   });
 
@@ -167,7 +168,7 @@ const dblclickS = $("#sleep").dblclick(function(){
     if (age >=0 && health <= 6){
         health+=4;
     $("#Health").text(`Health:${(health)}`);
-    console.log("ZzZzZ says the Hydra!");
+    console.log(`ZzZzZzz`);
     }
   });
 
