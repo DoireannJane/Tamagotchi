@@ -11,6 +11,15 @@ let fun = 10;
 let energy = 10;
 let energyInterval = null;
 
+// let $nameHydra = $(“#name”).val();
+// const nameHydra = $("#name").addEventListener('keypress', function (e) {
+//     if (e.key === 'Enter') {
+//         $("h1").html.fadeOut(500, function() {
+//             $(this).html(`${$nameHydra}'the Hydra'`).fadeIn(500);
+//         });
+//     }
+// });
+
 const gameBegin = $("#egg").click(function(){
     $("#egg").hide();
     $("body").css("background-color","black");
@@ -138,7 +147,7 @@ const dblclickP = $("#play").dblclick(function(){
 
 const clickS = $("#sleep").click(function(){
     // clearInterval(healthInterval);
-    if (age >=0 && sleep <= 9){
+    if (age >=0 && health <= 9){
         health+=1;
     $("#Health").text(`Health:${(health)}`);
     console.log("ZzZzZ says the Hydra!");

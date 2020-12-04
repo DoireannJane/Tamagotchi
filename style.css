@@ -70,3 +70,7 @@ section {
     z-index: 1;
 
 }
+#egg:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+  }
