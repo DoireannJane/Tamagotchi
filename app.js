@@ -1,4 +1,5 @@
 console.log("Welcome proud parent! Click egg to hatch!")
+
 // $('input').keyup(function(event) {
 //     if (event.keyCode === 13) {
 //         $("#id_of_button").click();
@@ -11,14 +12,21 @@ let fun = 10;
 let energy = 10;
 let energyInterval = null;
 
-// let $nameHydra = $(“#name”).val();
-// const nameHydra = $("#name").addEventListener('keypress', function (e) {
+
+
+// let $nameHydra= $("#name").val();
+// document.getElementById("#name").addEventListener('keypress', function (e){
 //     if (e.key === 'Enter') {
 //         $("h1").html.fadeOut(500, function() {
 //             $(this).html(`${$nameHydra}'the Hydra'`).fadeIn(500);
 //         });
+        
 //     }
 // });
+function getName(){
+    const name = $("#name").val();
+    $("h1").html(`${name} the Hydra`)
+}
 
 const gameBegin = $("#egg").click(function(){
     $("#egg").hide();

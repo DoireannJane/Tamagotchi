@@ -27,3 +27,7 @@ After 30 seconds of no click response one minute is removed from overall life
 ||
 
 https://whimsical.com/tamagotchi-JxAex1bq2tojfW7gHLrr7g
+
+
+
+ICE BOX-- more images as it grows. Fade in with name.
