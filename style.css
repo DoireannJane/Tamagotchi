@@ -8,6 +8,7 @@ h1 {
     font-size: 40px;
     color: #DD7F48;
     text-align: center;
+    margin: auto;
 }
 .age {
     padding: 10px;
@@ -20,8 +21,14 @@ section {
 }
 
 .button {
+    font-size: 16px;
     align-items: center;
-    margin-left: 340px;
+    margin:auto;
+    padding: 50px;
+
+}
+#name {
+   padding:10px;
 }
 
 .pics {
