@@ -35,3 +35,4 @@ ICE BOX--
 -Fade in with name upon submit.
 -Randomize setInterval time.
 -Have name entry on top of egg with prompt to click egg after
+-vibrate/shake image if health, fun or energy aproaches 0
