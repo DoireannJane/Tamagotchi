@@ -37,7 +37,7 @@ const gameBegin = $("#egg").click(function(){
     const ager = setInterval(function (){
         console.log(`Happy Birthday ${name}!`);
         age++;
-        $(".age").text(`age: ${age} years old`);
+        $(".age").text(`Age: ${age} years old`);
 
         if (age === 3) {
             $("#baby").hide();
@@ -54,7 +54,7 @@ const gameBegin = $("#egg").click(function(){
         if (health ===0 || fun ===0 || health ===0){
             clearInterval(ager);
         }
-    }, 2000);
+    }, 5000);
 }
 );
 
@@ -71,7 +71,7 @@ const setDecreaseHealth = function(){
             $("#adult").hide();
             $(".button").hide();
         }
-    }, 3000);
+    }, 4000);
 };
 
 const overallDecreaseH = $("#egg").click(setDecreaseHealth);
@@ -89,7 +89,7 @@ const setDecreaseEnergy = function(){
             $("#adult").hide();
             $(".button").hide();
         }
-    }, 3500);
+    }, 4500);
 };
 const overallDecreaseE = $("#egg").click(setDecreaseEnergy);
 
@@ -106,7 +106,7 @@ const setDecreaseFun = function(){
             $("#adult").hide();
             $(".button").hide();
         }
-    }, 4000);
+    }, 5000);
 };
 const overallDecreaseF = $("#egg").click(setDecreaseFun);
 // const energyIncrease = function energyIncrease() {

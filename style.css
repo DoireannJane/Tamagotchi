@@ -12,23 +12,36 @@ h1 {
 }
 .age {
     padding: 10px;
+    font-family: 'JetBrains Mono', monospace;
 }
 .overall {
     padding: 10px;
+    font-family: 'JetBrains Mono', monospace;
+
 }
 section {
     text-align: center;
 }
 
 .button {
+    font-family: 'Bungee Shade', cursive;
     font-size: 16px;
     align-items: center;
     margin:auto;
     padding: 50px;
-
+    outline: none;
+    border-radius: 50%;
+    color: rgb(240, 157, 3);
 }
+
+
 #name {
    padding:10px;
+   font-family: 'JetBrains Mono', monospace;
+}
+
+#enter {
+    font-family: 'JetBrains Mono', monospace;
 }
 
 .pics {
@@ -46,7 +59,7 @@ section {
       }
     
 
-#egg: hover {
+#egg.hover {
 }
 
 #baby {

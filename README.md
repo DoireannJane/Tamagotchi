@@ -30,4 +30,8 @@ https://whimsical.com/tamagotchi-JxAex1bq2tojfW7gHLrr7g
 
 
 
-ICE BOX-- more images as it grows. Fade in with name.
+ICE BOX-- 
+-more images and gifs as it grows.
+-Fade in with name upon submit.
+-Randomize setInterval time.
+-Have name entry on top of egg with prompt to click egg after
