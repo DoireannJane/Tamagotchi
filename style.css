@@ -6,7 +6,7 @@ position: absolute  */
 h1 {
     font-family: 'Bungee Shade', cursive;
     font-size: 40px;
-    color: #DD7F48;
+    color: rgb(135, 11, 135);
     text-align: center;
     margin: auto;
 }
@@ -31,7 +31,7 @@ section {
     padding: 50px;
     outline: none;
     border-radius: 50%;
-    color: rgb(240, 157, 3);
+    color:rgb(135, 11, 135);
 }
 
 
