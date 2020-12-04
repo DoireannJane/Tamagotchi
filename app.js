@@ -172,6 +172,14 @@ const dblclickS = $("#sleep").dblclick(function(){
     }
   });
 
+ const shakewarn = function shakeWarn(){
+     if (health <2 || fun <2 || energy <2){
+    // $("#adult").effect("shake", {direction: "up", times: 4, distance: 10}, 1000 );
+    // $("#adult").toggleClass('flip');
+     }
+ };
+ 
+
 
 
 
