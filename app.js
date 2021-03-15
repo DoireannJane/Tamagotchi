@@ -1,3 +1,4 @@
+
 console.log("Welcome proud parent! Click egg to hatch!")
 
 // $('input').keyup(function(event) {
@@ -179,7 +180,3 @@ const dblclickS = $("#sleep").dblclick(function(){
      }
  };
  
-
-
-
-
